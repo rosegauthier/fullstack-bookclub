@@ -23,6 +23,8 @@
     "material-ui": "^0.19.4",
     "moment": "^2.19.2",
     "mongoose": "^4.13.0",
+    "passport": "^0.4.0",
+    "passport-local-mongoose": "^4.4.0",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.5",
     "react-bootstrap-datetimepicker": "0.0.22",
