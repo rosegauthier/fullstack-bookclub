@@ -702,6 +702,9 @@ td.rdtYear:hover {
   display: flex;
   justify-content: center; }
 
+a.btn {
+  text-decoration: none; }
+
 /* EDITOR */
 /* ICONS */
 /* COLORS */
