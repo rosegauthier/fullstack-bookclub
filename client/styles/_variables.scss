@@ -1,0 +1,177 @@
+/* EDITOR */
+$editor-panels-container-width-sm: 380px;
+$editor-panels-container-width-md: 400px;
+$editor-panels-container-width-lg: 500px;
+$editor-page-width: 545px;
+
+/* ICONS */
+$fa-font-path: "/fonts/font-awesome";
+
+
+/* COLORS */
+$white:  #ffffff !default;
+$black:  #000 !default;
+$theme-primary: $white !default;
+$theme-secondary: #F5F5F5 !default; 
+$theme-tertiary: $black !default;
+$brand-primary: #70C1B3 !default;
+$brand-secondary: #FF85C8 !default;
+$brand-tertiary: #70C1B3 !default;  
+$brand-success: #00E93B !default;
+$brand-info: #5bc0de !default;
+$brand-warning: #f0ad4e !default;
+$brand-danger: #d9534f !default;
+
+
+/* COLORS HOVER */
+$brand-primary-hover: darken($brand-primary, 10%) !default;
+$brand-secondary-hover: darken($brand-secondary, 10%) !default;
+$brand-tertiary-hover: darken($brand-tertiary, 10%) !default;
+$brand-success-hover: darken($brand-success, 10%) !default;
+$brand-info-hover: darken($brand-info, 10%) !default;
+$brand-warning-hover: darken($brand-warning, 10%) !default;
+$brand-danger-hover: darken($brand-danger, 10%) !default;
+
+$state-success-bg: $brand-success !default;
+$state-info-bg: $brand-info !default;
+$state-warning-bg: $brand-warning !default;
+$state-danger-bg: $brand-danger !default;
+
+
+$table-alt-row-color:   #f4f2f8;
+$brand-text:            #363636;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+$common-margin:			15px;
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-color:    $brand-text !default;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:            $white !default;
+$link-decoration:       underline !default;
+$link-hover-color:      $white !default;
+$link-hover-decoration: underline !default;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+//## Font for body copy, link, button, form elements and etc.
+$font-family-sans-serif:  sans-serif, Helvetica, Arial;
+//## Font for headings
+$font-family-headings:    Arial, Helvetica, sans-serif !default;
+
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:   1.25rem !default;
+$font-size-sm:   .875rem !default;
+$font-size-xs:   .75rem !default;
+
+$font-weight-normal: 400 !default; //Use number for iPad rendering
+$font-weight-bold: 700 !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.75rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: 1rem !default;
+
+//Assumes using LIGHT version for headings
+$headings-font-family:   $font-family-headings !default;
+$headings-font-weight:   400 !default;
+$headings-line-height:   1.1 !default;
+$headings-color:         inherit !default;
+
+//Footer
+$footer-bg:             #e5e5e5;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-padding-x:                  1rem !default;
+$btn-padding-y:                  .5rem !default;
+$btn-line-height:                1.25 !default;
+$btn-font-weight:                $font-weight-normal !default;
+$btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
+$btn-focus-box-shadow:           0 0 0 2px rgba($brand-primary, .25) !default;
+$btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
+
+$btn-primary-color:              $white !default;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:             $btn-primary-bg !default;
+
+$btn-secondary-color:            $brand-secondary !default;
+$btn-secondary-bg:               $white !default;
+$btn-secondary-border:           #ccc !default;
+
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:              0 !default;
+$btn-border-radius-lg:           0 !default;
+$btn-border-radius-sm:           0 !default;
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  960px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+//extra large screen 
+$screen-xlg:                  1600px !default;
+$screen-xlg-min:              $screen-xlg !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+$screen-lg-max:              ($screen-xlg-min - 1) !default;
