@@ -54,7 +54,7 @@ class AddBook extends React.Component {
         return (
             <div>
                 <form>
-                    <div>Title: 
+                    <div className="mt-3">Title <br/>
                         <input 
                             name="title" 
                             type="text" 
@@ -62,7 +62,7 @@ class AddBook extends React.Component {
                             value={ this.state.title } 
                             onChange={ (e) => this.handleChange(e.target.name, e.target.value) } />
                     </div>
-                    <div>Author: 
+                    <div className="mt-3">Author <br/>
                         <input 
                             name="author" 
                             type="text" 
@@ -70,7 +70,7 @@ class AddBook extends React.Component {
                             value={ this.state.author } 
                             onChange={ (e) => this.handleChange(e.target.name, e.target.value) } />
                     </div>
-                    <div>Recommendation: 
+                    <div className="mt-3 mb-3">Recommendation <br/>
                         <input 
                             name="synopsis" 
                             type="textarea" 
@@ -78,13 +78,16 @@ class AddBook extends React.Component {
                             value={ this.state.synopsis } 
                             onChange={ (e) => this.handleChange(e.target.name, e.target.value) } />
                     </div>
-                    <ReactFilestack
-                        apikey={"AwT9gpp4PQvqDYZ9Vm6Voz"}
-                        buttonText={this.state.buttonText}
-                        onSuccess={ this.onUploadSuccess }
-                    />
+                    <div>
+                        <ReactFilestack
+                            className="btn btn-primary"
+                            apikey={"AwT9gpp4PQvqDYZ9Vm6Voz"}
+                            buttonText={this.state.buttonText}
+                            onSuccess={ this.onUploadSuccess }
+                        />
+                    </div>
                     <button 
-                        className="btn btn-outline-primary btn-block"
+                        className="btn btn-outline-primary mt-3"
                         onClick={ this.addBook }>Add Book</button>
                 </form>
             </div>
