@@ -8,7 +8,8 @@ class AddBook extends React.Component {
             title: '',
             author: '',
             synopsis: '',
-            coverUrl:''
+            coverUrl:'',
+            buttonText: 'Upload Poster'
         }
         this.addBook = this.addBook.bind(this);
         this.handleChange = this.handleChange.bind(this);
@@ -18,6 +19,7 @@ class AddBook extends React.Component {
     addBook(e) {
         e.preventDefault();
         const book = this.state;
+        delete book.buttonText;
         // book.clubID = ;
         fetch(`/api/books`, {
             method: 'POST',
@@ -42,7 +44,8 @@ class AddBook extends React.Component {
     onUploadSuccess(success) {
         const url = success.filesUploaded[0].url;
         this.setState({
-            coverUrl: url
+            coverUrl: url,
+            buttonText: 'Uploaded!'
         });
     }
 
@@ -77,7 +80,7 @@ class AddBook extends React.Component {
                     </div>
                     <ReactFilestack
                         apikey={"AwT9gpp4PQvqDYZ9Vm6Voz"}
-                        buttonText="Upload Poster"
+                        buttonText={this.state.buttonText}
                         onSuccess={ this.onUploadSuccess }
                     />
                     <button 
