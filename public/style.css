@@ -697,6 +697,11 @@ td.rdtYear:hover {
   width: 80%;
   margin: 0 auto; }
 
+.bookclub-card {
+  min-height: 200px;
+  display: flex;
+  justify-content: center; }
+
 /* EDITOR */
 /* ICONS */
 /* COLORS */

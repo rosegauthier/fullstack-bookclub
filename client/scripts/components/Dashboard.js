@@ -48,21 +48,21 @@ class Dashboard extends React.Component {
     render() {
         return (
             <div>
-                <div>
+                <div className="mt-5">
                     <label htmlFor="bookclubname">
                         Bookclub Name:
                         <input id="bookclubname" type="text" onChange={(e) => this.handleChange(e.target.value)} />
                     </label>
                     <button className="btn btn-primary" onClick={ this.addBookclub }>Add Bookclub</button>
                 </div>
-                <div>
+                <div className="mt-5">
                     <h2>Your Bookclubs</h2>
                     <div className="row">
                         {
                             this.state.bookclubs.map(club => {
                                 return <div className="col-md-4" key={ club._id }>
                                     <div 
-                                        className="card card-inverse card-primary mb-3 text-center"
+                                        className="card card-inverse card-primary mb-3 text-center bookclub-card"
                                         key={club._id} 
                                         onClick={ () => this.goToBookclub(club._id) }>
                                         <h3>{ club.name }</h3>
