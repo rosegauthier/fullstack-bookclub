@@ -63,15 +63,15 @@ class AddBook extends React.Component {
                         <input 
                             name="author" 
                             type="text" 
-                            placeholder="Title" 
+                            placeholder="Author" 
                             value={ this.state.author } 
                             onChange={ (e) => this.handleChange(e.target.name, e.target.value) } />
                     </div>
-                    <div>Synopsis: 
+                    <div>Recommendation: 
                         <input 
                             name="synopsis" 
                             type="textarea" 
-                            placeholder="Title" 
+                            placeholder="Why should we read this book?" 
                             value={ this.state.synopsis } 
                             onChange={ (e) => this.handleChange(e.target.name, e.target.value) } />
                     </div>
