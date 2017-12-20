@@ -36,24 +36,16 @@ class BookclubOverview extends React.Component {
         fetch(`/api/meetings/byclub/${id}`)
             .then(res => res.json())
             .then(json => {
-                //parse query string here?
                 let meetingToDisplay;
                 if(newlyCreated) {
                     // not sure if I still need this
                     meetingToDisplay = newlyCreated;
-                } else if(this.props.location.search) {
-                    const search = this.props.location.search;
-                    const params = new URLSearchParams(search);
-                    const meetingID = params.get('meeting');
-
-                    meetingToDisplay = meetingID;
                 } else {
                     meetingToDisplay = json[0]._id;
                 }
                 this.setState({ meetings: json });
                 this.setCurrentMeeting(meetingToDisplay);
                 this.getMeetingDropdownOptions(json);
-                // this.fetchCurrentMeeting(json[0]._id);
             });
     }
 

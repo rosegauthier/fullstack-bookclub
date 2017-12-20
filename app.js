@@ -24,8 +24,6 @@ mongoose.connect(process.env.MONGODB_SERVER);
 app.use(passport.initialize());
 app.use(passport.session());
 
-// app.use('/api/bookclubs*', requireLogin);
-
 // This serves all files placed in the /public
 // directory (where gulp will build all React code)
 app.use(express.static('public'));

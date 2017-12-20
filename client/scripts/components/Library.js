@@ -35,16 +35,6 @@ class Library extends React.Component {
                         }
                     } } />
                 <Route 
-                    path={`/library/choosebook/:bookclubid/:meetingid`} 
-                    render={ (props) => {
-                        return <BookList 
-                            meetingID={props.match.params.meetingid} 
-                            bookClubID={props.match.params.bookclubid}
-                            selectingBook={true} 
-                            books={ this.state.books }
-                            history={props.history} /> } 
-                        } />
-                <Route 
                     exact path={`/library`} render={ () => <BookList books={ this.state.books } /> } />
             </div>
         )

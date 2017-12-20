@@ -16,7 +16,7 @@ class MeetingContent extends React.Component {
                         : "no location chosen"
                     }
                 </div>
-                {/* <button>Suggest a Location</button> */}
+                
                 <div> Date/Time: 
                     { this.props.datetime.length
                         ? moment(this.props.datetime).format('h:mma MMMM DD, YYYY') 

@@ -20,7 +20,6 @@ class AddBook extends React.Component {
         e.preventDefault();
         const book = this.state;
         delete book.buttonText;
-        // book.clubID = ;
         fetch(`/api/books`, {
             method: 'POST',
             body: JSON.stringify(book),
